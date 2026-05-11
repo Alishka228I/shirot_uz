@@ -22,6 +22,10 @@ from telebot import types
 
 TOKEN = "8770781211:AAFQVZzW89sf2kAtMu_wo1BKo2Zpkte66lA"
 
+
+ADMIN_ID = 6716338772
+ADMIN_ID = 6764894545
+ADMIN_ID = 1818590306
 ADMIN_ID = 511784627
 
 bot = telebot.TeleBot(TOKEN)
