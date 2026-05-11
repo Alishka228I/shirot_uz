@@ -31,16 +31,18 @@ ADMIN_ID = 511784627
 bot = telebot.TeleBot(TOKEN)
 
 CONTACT_NUMBERS = """
-📞 Номера для связи / Aloqa raqamlari:
+📞 Пожалуйста, позвоните по номерам ниже для оформления заказа.
+Пожалуйста, скажите, что вы пришли с Telegram-бота.
 
-+998 90 065 00 01
+📞 Iltimos, buyurtma uchun quyidagi raqamlarga qo‘ng‘iroq qiling.
+Telegram-bot orqali kelganingizni ayting.
+
+📱 Номера / Raqamlar:
+
 +998 50 553 40 00
 +998 93 837 00 75
-
-При звонке или сообщении скажите, что вы с Telegram-бота.
-Qo‘ng‘iroq qilganda yoki yozganda Telegram-bot orqali kelganingizni ayting.
++998 90 065 00 01
 """
-
 products = {
     "Рапс шрот / Raps shroti": {
         "price": 420,
