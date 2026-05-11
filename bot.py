@@ -216,7 +216,8 @@ def confirm_order(message):
         f"Ссылка / Havola: {tg_link}"
     )
 
-    bot.send_message(ADMIN_ID, admin_text)
+   for admin_id in ADMIN_IDS:
+    bot.send_message(admin_id, admin_text)
 
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add("/start")
