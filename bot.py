@@ -215,9 +215,9 @@ def confirm_order(message):
         f"Покупатель / Xaridor: {message.from_user.first_name}\n"
         f"Ссылка / Havola: {tg_link}"
     )
-
-   for admin_id in ADMIN_IDS:
-    bot.send_message(admin_id, admin_text)
+    
+    for admin_id in ADMIN_IDS:
+        bot.send_message(admin_id, admin_text)
 
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add("/start")
