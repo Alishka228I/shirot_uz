@@ -1,6 +1,25 @@
 import telebot
 from telebot import types
 
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is running!"
+
+def run():
+    app.run(host='0.0.0.0', port=10000)
+
+Thread(target=run).start()
+
+
+
+import telebot
+from telebot import types
+
 TOKEN = "8770781211:AAFQVZzW89sf2kAtMu_wo1BKo2Zpkte66lA"
 
 ADMIN_ID = 511784627
